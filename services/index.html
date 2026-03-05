@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Unsere Dienstleistungen - Instant Advantages</title>
+    <link rel="icon" type="/image/jpg" href="/html/images/logo/logo white.png" />
+    <link rel="stylesheet" href="/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  
+  </head>
+  
+
+  <body class="services">
+
+
+    <div id ="header"></div>
+
+    <script>fetch("/header.html")
+    .then(res => res.text())
+    .then(html => {
+      document.getElementById("header").innerHTML = html;
+
+      // --- add your burger menu script here ---
+      const menuToggle = document.querySelector('.menu-toggle');
+    const navBar = document.getElementById('nav_bar');
+
+    menuToggle.addEventListener('click', (e) => {
+    e.stopPropagation(); // prevent bubbling
+   navBar.classList.toggle('show');
+    menuToggle.classList.toggle('hide'); // hide hamburger when menu is open
+    });
+
+    // close menu when clicking outside
+    document.addEventListener('click', (e) => {
+      const isClickInsideNav = navBar.contains(e.target);
+      const isClickOnToggle = menuToggle.contains(e.target);
+
+      if (navBar.classList.contains('show') && !isClickInsideNav && !isClickOnToggle) {
+        navBar.classList.remove('show');
+        menuToggle.classList.remove('hide'); // show hamburger again
+      }
+    });
+      // --- end of burger menu script ---
+    });</script>
+
+
+
+    <section class="hero">
+
+        <div class="hero_text">
+
+            <p class="kicker">
+            Instant Advantages
+            </p>
+
+            <h1>
+              Unsere Dienstleistungen
+            </h1>
+
+            <h2>
+              Mehr Kunden für lokale Unternehmen
+            </h2>
+
+            <p class="p_value">
+              Viele lokale Unternehmen leisten hervorragende Arbeit, 
+              werden online jedoch kaum gefunden. 
+              Eine professionelle Website und gezielte Werbung können genau das ändern.
+            </p>
+
+        </div>
+
+        <div class="certi">
+            <a href="https://www.credly.com/users/max-wolfe-instantadvantages/badges#credly" target="_blank">
+            <img src="/images/certificate.jpg" alt="Meta Zertifikat">
+            </a>
+         </div>
+
+    </section>
+
+    <section class="services_section">
+
+      <div class="web_paket">
+
+          <h3>
+            Website Paket
+          </h3>
+
+          <p class="p_services">
+            Eine Moderne Webite hilft Kunden, Vertrauen zu Ihrem Unternehmen aufzubauen
+          </p>
+
+          <ul>
+            <li>Individuelles Design</li>
+            <li>Mobile & Desktop optimiert</li>
+            <li>Schnelle Ladezeiten</li>
+            <li>Google auffindbar (SEO)</li>
+            <li>Domain-Verknüpfung</li>
+          </ul>
+
+          <p class="p_services_note">
+           + Falls noch keine Domain (www.ihrunternehmen.de)
+           vorhanden ist, helfen wir Ihnen selbstverständlich kostenlos bei der Einrichtung.
+          </p>
+
+          <p class="p_services_grand">
+            Verpflichtungsfreier Website-Entwurf
+          </p>
+
+          <p class="p_services">
+            Nach einem kurzen Gespräch erstellen wir einen Website-Entwurf für Ihr Unternehmen <br>
+            <span class="grand">- völlig kostenfrei.</span>
+          </p>
+
+          <p class="p_services">
+            Erst danach entscheiden Sie, ob Sie die Website übernehmen möchten <br>
+            <span class="grand"> völlig unverbindlich.</span>
+          </p>
+
+          <p class="p_services">
+            <span class="bold">Website Preis:</span>
+             <br>349€</p>
+
+          <p class="p_services"><span class="bold">Optional - Hosting & Betreung</span> <br>Wir hosten Ihre Website und sind jederzeit 
+            für Änderungen oder Unterstützung erreichbar.</p>
+
+
+          <p class="p_services">49€ / Monat</p>
+
+      </div>
+
+
+      <div class="divider"></div>
+
+
+      <div class="ad_paket">
+
+        <p class="p1">
+            Meta Werbung Paket
+          </p>
+
+      </div>
+
+
+
+    </section>
+
+
+    <script src="/website.js"></script>
+  </body>
+</html>
