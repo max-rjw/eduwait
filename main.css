@@ -298,6 +298,43 @@ transition: 0.3s ease;
   text-underline-offset: 6px;
 }
 
+/* contact page */
+
+.contact .hero{
+  margin-left: 40px;
+}
+
+.contact .links{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 100px;
+  gap: 40px;
+}
+
+.contact .links a{
+  color: #ffffff; 
+  font-size: 22px; 
+  font-weight: normal; 
+  align-items: center;
+  text-decoration: none; 
+  white-space: nowrap;
+}
+
+.contact .contact_btn{
+  display:inline-block;
+  padding:12px 12px;
+  border:2px solid white;
+  border-radius:30px;
+  color:white;
+  text-decoration:none;
+  transition:0.3s;
+}
+
+.contact .contact_btn:hover{
+  background:white;
+  color:black;
+}
 
 
 /*Iphone/small screens*/
