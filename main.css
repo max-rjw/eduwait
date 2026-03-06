@@ -258,18 +258,12 @@ transition: 0.3s ease;
   font-weight: 700;
 }
 
-.services .usp{
+.usp, 
+.verpf, 
+.preis
+{
   margin-top: 80px;
 }
-
-.services .verpf{
-  margin-top: 80px;
-}
-
-.services .preis{
-  margin-top: 80px;
-}
-
 
 .services .divider{
   width: 6px;
