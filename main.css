@@ -197,7 +197,7 @@ transition: 0.3s ease;
 }
 .services .hero{
   margin-left: 40px;
-  margin-right:240px;
+  margin-right:320px;
 }
 
 .services .hero_text{
@@ -217,12 +217,10 @@ transition: 0.3s ease;
 
 .services .services_section{
   display: flex;
-  flex-direction: row;
-  align-items:flex-start ;
-  justify-content: space-between;
+  gap: 80px;
+  align-items: flex-start;
+  margin-top: 140px;
   margin-left: 40px;
-  margin-right: 240px;
-  margin-top: 100px;
 
 }
 
@@ -233,7 +231,9 @@ transition: 0.3s ease;
   color: #ffff;
   gap: 12px;
   max-width: 500px;
-  font-size: 25px;
+  font-size: 20px;
+  margin-bottom: 50px;
+  line-height: 1.5;
 }
 
 .services .web_paket h3{
@@ -243,14 +243,9 @@ transition: 0.3s ease;
 
 }
 
-.services .p_services_note{
+.services .note{
   font-size: 18px;
-}
-
-.services .p_services_grand{
-  text-decoration: underline;
-  text-underline-offset: 6px;
-  font-weight: 700;
+  font-weight: 500;
 }
 
 .services .grand{
@@ -263,17 +258,23 @@ transition: 0.3s ease;
   font-weight: 700;
 }
 
-.services .web_paket .p3{
-  text-decoration: underline;
-  text-underline-offset: 4px;
+.services .usp{
+  margin-top: 80px;
+}
+
+.services .verpf{
+  margin-top: 80px;
+}
+
+.services .preis{
+  margin-top: 80px;
 }
 
 
 .services .divider{
-  height: 1000px;
   width: 6px;
-  background-color: #ffffff;
-  margin: 0px;
+  background: white;
+  align-self: stretch;
 
 }
 
