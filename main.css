@@ -22,7 +22,7 @@ header
 .logo img 
 { 
   width: 100px; 
-  margin-left: 40px; 
+  margin-left: 50px; 
   margin-top: 40px; 
   flex: 0 0 auto; } 
 
@@ -88,7 +88,7 @@ transition: 0.3s ease;
 .hero-content {
   position: absolute;
   top: 0px;
-  left: 40px;
+  left: 50px;
   padding-right: 240px;
   z-index: 10;
 }
@@ -197,7 +197,7 @@ transition: 0.3s ease;
   line-height: 1.5;
 }
 .services .hero{
-  margin-left: 40px;
+  margin-left: 50px;
   margin-right:320px;
 }
 
@@ -221,7 +221,7 @@ transition: 0.3s ease;
   gap: 80px;
   align-items: flex-start;
   margin-top: 140px;
-  margin-left: 40px;
+  margin-left: 50px;
   font-size: 20px;
 }
 
@@ -467,7 +467,17 @@ transition: 0.3s ease;
     margin-right: 11px;
   }
 
-  } 
+  /* Services */
+
+.services .services_section{
+  flex-direction: column;
+  align-items: center;
+  gap: 60px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+} 
 
 .hide {
   display: none;
