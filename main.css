@@ -194,6 +194,7 @@ transition: 0.3s ease;
 /* services page */
  
 .services {
+  line-height: 1.5;
 }
 .services .hero{
   margin-left: 40px;
@@ -241,7 +242,6 @@ transition: 0.3s ease;
   gap: 50px;
   max-width: 500px;
   margin-bottom: 50px;
-  line-height: 1.5;
 }
 
 .services h3{
@@ -287,7 +287,6 @@ transition: 0.3s ease;
   color: #ffffff;
   max-width: 500px;
   margin-bottom: 50px;
-  line-height: 1.5;
   gap: 50px;
 }
 
@@ -301,21 +300,38 @@ transition: 0.3s ease;
 /* contact page */
 
 .contact .hero{
-  margin-left: 40px;
+  margin-left: 0px;
+}
+
+.contact .hero{
+  text-align: center;
+  margin-top: 60px;
+}
+
+.contact h2{
+  margin-top: 25px;
+  margin-bottom: 0px;
+}
+
+.contact .note{
+  margin-top: 15px;
+  font-size: 22px;
+  font-weight: 400;
 }
 
 .contact .links{
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  margin-top: 100px;
-  gap: 40px;
+  align-items: center;
+  margin-top: 50px;
+  gap: 12px;
 }
 
 .contact .links a{
   color: #ffffff; 
-  font-size: 22px; 
+  font-size: 23px; 
   font-weight: normal; 
+  text-align: flex start; 
   align-items: center;
   text-decoration: none; 
   white-space: nowrap;
@@ -323,7 +339,7 @@ transition: 0.3s ease;
 
 .contact .contact_btn{
   display:inline-block;
-  padding:12px 12px;
+  padding:14px 34px;
   border:2px solid white;
   border-radius:30px;
   color:white;
@@ -336,6 +352,21 @@ transition: 0.3s ease;
   color:black;
 }
 
+.contact_btn_w{
+  display:inline-block;
+  padding:16px 36px;
+  border:2px solid white;
+  border-radius:30px;
+  color:white;
+  text-decoration:none;
+  transition:0.3s;
+  margin-bottom: 10px;
+}
+
+.contact .contact_btn_w:hover{
+  background:white;
+  color:black;
+}
 
 /*Iphone/small screens*/
 @media (max-width: 869px) 
