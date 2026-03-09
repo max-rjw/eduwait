@@ -1,3 +1,7 @@
+html{
+  scroll-behavior:smooth;
+}
+
 body 
 { 
   font-family: 'Montserrat', sans-serif; 
@@ -198,7 +202,6 @@ transition: 0.3s ease;
 }
 .services .hero{
   margin-left: 50px;
-  margin-right:320px;
 }
 
 .services .hero_text{
@@ -208,12 +211,65 @@ transition: 0.3s ease;
 }
 
 .services .p_value{
-  font-size: 25px;
-  margin-top: 40px;
+  font-size: 23px;
+  margin-top: 15px;
+  max-width: 930px;
 }
 
 .services .hero_text h2{
-  margin-top: 40px;
+  margin-top: 60px;
+}
+
+.preview_section_divider{
+  width: auto;
+  height:3px;
+  background:white;
+  opacity:0.2;
+  margin-top: 30px;
+}
+
+.services_preview{
+  display:flex;
+  justify-content: center;
+  gap:160px;
+  margin: 25px auto;
+}
+
+.service_card{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width:400px;
+  color:white;
+}
+
+.service_card h3{
+  font-size: 24px;
+}
+.service_card p{
+  font-size: 22px;
+  opacity: 0.85;
+  margin-top: 0px;
+} 
+
+.service_card a{
+  font-size: 18px;
+}
+
+.service_btn{
+  display:inline-block;
+  margin-top: 10px;
+  padding:12px 26px;
+  border:2px solid white;
+  border-radius:30px;
+  color:white;
+  text-decoration:none;
+  transition:0.3s;
+}
+
+.service_btn:hover{
+  background:white;
+  color:black;
 }
 
 .services .services_section{
@@ -469,15 +525,78 @@ transition: 0.3s ease;
 
   /* Services */
 
-.services .services_section{
-  flex-direction: column;
-  align-items: center;
-  gap: 60px;
-  margin-left: 20px;
-  margin-right: 20px;
-}
+  .services{
+    line-height: 1.3;
+  }
+  .services .hero{
+    margin-left: 20px;
+    margin-right: 40px;
+  }
 
-} 
+  .services .kicker {
+    font-size: 12px;
+    margin-bottom: 8px;
+  }
+
+  .services .hero h1 {
+      font-size: 20px;
+      font-weight: 700;
+  }
+
+  .services .hero h2 {
+      font-size: 15px;
+  }
+    
+
+  .services .p_value{
+    margin-top: 35px;
+    font-size: 15px;
+  }
+
+  .services_preview{
+  flex-direction:column;
+  gap:40px;
+  margin:60px 20px;
+  }
+
+  .services .services_section{
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 30px;
+  }
+
+  .services_section h3{
+    font-size: 15px;
+  }
+
+  .services_section p{
+    font-size: 15px;
+  }
+
+  .services_section .note{
+    font-size: 14px;
+  }
+
+  .services_section ul{
+    font-size: 15px;
+  }
+
+  .services .web_paket{
+    gap: 30px;
+  }
+
+  .services .divider{
+  display:none;
+  }
+
+  .services .web_paket,
+  .services .ad_paket{
+    max-width:100%;
+  }
+}
 
 .hide {
   display: none;
