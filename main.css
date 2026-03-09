@@ -221,6 +221,7 @@ transition: 0.3s ease;
 
 .services .hero_text h2{
   margin-top: 40px;
+  font-size: 24px;
 }
 
 .services .p_value{
@@ -235,7 +236,37 @@ transition: 0.3s ease;
   height:3px;
   background:white;
   opacity:0.15;
-  margin-top: 25px;
+  margin-top: 40px;
+}
+
+.trust_section{
+  text-align:center;
+  color:white;
+  margin:70px auto;
+  max-width:900px;
+}
+
+.trust_section h2{
+  font-size: 24px;
+}
+
+.trust_items{
+  display:flex;
+  justify-content:center;
+  gap:60px;
+  margin-top:30px;
+}
+
+.trust_item h4{
+  font-size: 22px;
+}
+
+.trust_item p{
+  font-size: 22px;
+}
+
+.trust_item{
+  max-width:250px;
 }
 
 .services_preview{
@@ -243,7 +274,7 @@ transition: 0.3s ease;
   justify-content: center;
   align-items: flex-start;
   gap:160px;
-  margin: 35px auto;
+  margin: 40px auto;
 }
 
 .service_card{
@@ -301,7 +332,7 @@ transition: 0.3s ease;
 }
 
 .divider_2{
-  margin-top: 180px;
+  margin-top: 280px;
 }
 
 .services .more_details{
