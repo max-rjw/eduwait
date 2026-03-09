@@ -200,6 +200,15 @@ transition: 0.3s ease;
 .services {
   line-height: 1.5;
 }
+
+.services h3{
+  font-size: 24px;
+  font-weight: 700;
+  text-decoration: underline;
+  text-underline-offset: 6px;
+  margin-top: 0px;
+}
+
 .services .hero{
   margin-left: 50px;
 }
@@ -210,42 +219,48 @@ transition: 0.3s ease;
   flex-direction: column;
 }
 
-.services .p_value{
-  font-size: 23px;
-  margin-top: 15px;
-  max-width: 930px;
+.services .hero_text h2{
+  margin-top: 40px;
 }
 
-.services .hero_text h2{
-  margin-top: 60px;
+.services .p_value{
+  font-size: 22px;
+  margin-top: 15px;
+  max-width: 930px;
+  opacity: 0.9;
 }
 
 .preview_section_divider{
   width: auto;
   height:3px;
   background:white;
-  opacity:0.2;
-  margin-top: 30px;
+  opacity:0.15;
+  margin-top: 25px;
 }
 
 .services_preview{
   display:flex;
   justify-content: center;
+  align-items: flex-start;
   gap:160px;
-  margin: 25px auto;
+  margin: 35px auto;
 }
 
 .service_card{
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  max-width:400px;
+  max-width:420px;
   color:white;
+  gap: 14px;
+
+  padding: 28px 32px;
+
+  background: rgba(255, 255,255, 0.06);
+  border: 2px solid rgba(255, 255, 255, 0.15);
+  border-radius: 18px;
 }
 
-.service_card h3{
-  font-size: 24px;
-}
 .service_card p{
   font-size: 22px;
   opacity: 0.85;
@@ -264,94 +279,139 @@ transition: 0.3s ease;
   border-radius:30px;
   color:white;
   text-decoration:none;
-  transition:0.3s;
+  transition: all 0.25s ease;
 }
 
 .service_btn:hover{
   background:white;
   color:black;
+  transform: scale(1.03);
+  border:2px solid rgba(255, 255, 255, 0.35);
 }
 
-.services .services_section{
-  display: flex;
-  gap: 80px;
-  align-items: flex-start;
-  margin-top: 140px;
-  margin-left: 50px;
-  font-size: 20px;
+#website-details,
+#ads-details{
+  scroll-margin-top: 110px;
 }
 
-.web_paket h3,
-.web_paket p,
-.web_paket ul,
-.ad_paket h3,
-.ad_paket p,
-.ad_paket ul {
+.more_details h3,
+.more_details p,
+.more_details ul {
   margin: 0;
 }
 
-.services .web_paket{
+.divider_2{
+  margin-top: 180px;
+}
+
+.services .more_details{
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   color: #ffff;
-  gap: 50px;
-  max-width: 500px;
-  margin-bottom: 50px;
+  gap: 110px;
+  max-width: 780px;
+  margin: 70px auto 60px;
 }
 
-.services h3{
+.services .more_details h3{
+  font-size: 35px;
+}
+
+.services .more_details h4{
+  margin: 0;
+}
+
+.services .more_details p{
+  font-size: 24px;
+}
+
+.services .more_details ul{
+  font-size: 24px;
+}
+
+.services .more_details .block_4 a{
+  font-size: 24px;
+}
+
+
+.services .more_details .bold{
+  font-size: 24px;
   font-weight: 700;
+}
+
+.services .more_details .underlined{
+  font-size: 24px;
   text-decoration: underline;
   text-underline-offset: 6px;
-
+  font-weight: 700;
 }
 
-.services .note{
-  font-size: 18px;
-  font-weight: 500;
+.services .more_details .faded{
+  opacity: 0.8;
+  font-weight: 400;
 }
 
-.services .grand{
+.services .more_details .faded_underlined{
+  font-size: 24px;
   text-decoration: underline;
   text-underline-offset: 6px;
-  font-weight: 700;
+  font-weight: 400;
+  opacity: 0.8;
 }
 
-.services .bold{
-  font-weight: 700;
+.services .more_details .faded_small{
+  font-size: 19px;
+  opacity: 0.8;
+  font-weight: 400;
 }
 
-.usp, 
-.verpf, 
-.preis
-{
-  margin-top: 80px;
+.services .more_details .intro{
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
 }
 
-.services .divider{
-  width: 6px;
-  background: white;
-  align-self: stretch;
 
+.services .more_details .block_2{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
-.services .ad_paket{
+.services .more_details .block_2 .faded_2, .services .more_details .block_2 .faded_underlined{
+  margin-top: 25px;
+}
+
+.services .more_details .block_3{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.services .more_details .block_3 p{
+  margin-top: 20px;
+}
+
+.services .more_details .block_4{
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  color: #ffffff;
-  max-width: 500px;
-  margin-bottom: 50px;
-  gap: 50px;
+  gap: 10px;
 }
 
-.services .ad_paket .p1{
-  font-size: 23px;
-  font-weight: 500;
-  text-decoration: underline;
-  text-underline-offset: 6px;
+.services .more_details .block_4 .optional{
+  margin-top: 30px;
 }
+
+.services .more_details .block_4 .button_2{
+  margin-top: 40px;
+  padding: 10px 18px;
+}
+
+
+
+
 
 /* contact page */
 
@@ -568,29 +628,9 @@ transition: 0.3s ease;
     margin-top: 30px;
   }
 
-  .services_section h3{
-    font-size: 15px;
-  }
 
-  .services_section p{
-    font-size: 15px;
-  }
 
-  .services_section .note{
-    font-size: 14px;
-  }
 
-  .services_section ul{
-    font-size: 15px;
-  }
-
-  .services .web_paket{
-    gap: 30px;
-  }
-
-  .services .divider{
-  display:none;
-  }
 
   .services .web_paket,
   .services .ad_paket{
