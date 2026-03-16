@@ -4,77 +4,116 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>Instant Advantages</title>
-    <link rel="icon" type="image/jpg" href="/images/logo/logo_white.png" />
-    <link rel="stylesheet" href="/main.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <meta name="description" content="Lokale Unternehmen wachsen mit uns — durch Websites und Meta-Ads, die wirklich verkaufen." />
+    <meta property="og:title" content="Instant Advantages" />
+    <meta property="og:description" content="Lokale Unternehmen wachsen mit uns — durch Websites und Meta-Ads, die wirklich verkaufen." />
+    <meta property="og:image" content="https://www.instantadvantages.com/assets/images/logo/og-image.png" />
+    <meta property="og:url" content="https://www.instantadvantages.com/" />
+    <meta property="og:type" content="website" />
+    <link rel="icon" type="image/png" href="/assets/images/logo/logo_white.png" />
+    <link rel="stylesheet" href="/css/main.css" />
   
   </head>
+
+  <body class="home-page">
+
+    <header id="header"></header>
+
+    <main>
+
+    <section class="hero">
+
+      <div class="hero__content container">
+
+        <div class="kicker"></div>
+
+        <h1 class="hero__title">
+          Lokale Unternehmen wachsen mit uns — durch Websites<br class="mobile-break"> und Meta-Ads, die wirklich verkaufen.
+        </h1>
+
+        <a href="/pages/contact/" class="btn btn--primary hero__cta">Jetzt kostenlos beraten lassen</a>
+
+      </div>
+
+    </section>
   
 
-  <body>
+    <section class="services-teaser">
+      <div class="container">
 
-    <div id ="header"></div>
+        <div class="services-teaser__grid">
 
-    <script>fetch("/header.html")
-    .then(res => res.text())
-    .then(html => {
-      document.getElementById("header").innerHTML = html;
+          <a href="/pages/our_services/#website" class="services-teaser__card">
+            <p class="services-teaser__label">Website Paket</p>
+            <h3 class="services-teaser__title">Professionelle Website für lokale Unternehmen.</h3>
+            <span class="services-teaser__link">Mehr erfahren</span>
+          </a>
 
-      // --- add your burger menu script here ---
-      const menuToggle = document.querySelector('.menu-toggle');
-    const navBar = document.getElementById('nav_bar');
+          <a href="/pages/our_services/#meta" class="services-teaser__card">
+            <p class="services-teaser__label">Meta-Werbung Paket</p>
+            <h3 class="services-teaser__title">Mehr Kunden durch gezielte Instagram & Facebook Werbung.</h3>
+            <span class="services-teaser__link">Mehr erfahren</span>
+          </a>
 
-    menuToggle.addEventListener('click', (e) => {
-    e.stopPropagation(); // prevent bubbling
-   navBar.classList.toggle('show');
-    menuToggle.classList.toggle('hide'); // hide hamburger when menu is open
-    });
+        </div>
 
-    // close menu when clicking outside
-    document.addEventListener('click', (e) => {
-      const isClickInsideNav = navBar.contains(e.target);
-      const isClickOnToggle = menuToggle.contains(e.target);
+      </div>
+    </section>
 
-      if (navBar.classList.contains('show') && !isClickInsideNav && !isClickOnToggle) {
-        navBar.classList.remove('show');
-        menuToggle.classList.remove('hide'); // show hamburger again
-      }
-    });
-      // --- end of burger menu script ---
-    });</script>
 
- 
-  <section class="hero">
+    <!--
+    <section class="work">
+      <div class="container">
 
-    <div class= "hero-content">
-       
-      <p class="kicker">
-      Instant Advantages
-      </p>
-        
-      <h1>Wir unterstützen lokale Unternehmen dabei, 
-          über <br>Meta-Ads und klar strukturierte, 
-          ziel-optimierte Websites mehr Kunden zu gewinnen.
-       </h1>
+        <p class="work__kicker">Unsere Arbeiten</p>
+        <h2 class="work__title">Ergebnisse, die für sich sprechen.</h2>
 
-    </div>
-  
-  <div class="hero-image">
-    <img src="images/hamburg.jpg" alt="Hamburg">
-    <div class="image-fade-top"></div>
-    <div class="image-fade"></div>
-  </div>
+        <div class="work__carousel">
 
-  <div class="certi">
-    <a href="https://www.credly.com/users/instantadvantages-maxwolfe" target="_blank">
-      <img src="/images/certificate.jpg" alt="Meta Zertifikat">
-    </a>
-  </div>
+          <div class="work__card">
+            <img class="work__card-image" src="/assets/images/work/client1.jpg" alt="Client 1">
+            <div class="work__card-info">
+              <p class="work__card-name">Kundenname</p>
+              <p class="work__card-result">+40% mehr Anfragen</p>
+            </div>
+          </div>
 
-  </section> 
+          <div class="work__card">
+            <img class="work__card-image" src="/assets/images/work/client2.jpg" alt="Client 2">
+            <div class="work__card-info">
+              <p class="work__card-name">Kundenname</p>
+              <p class="work__card-result">3x ROAS in 30 Tagen</p>
+            </div>
+          </div>
 
-    <script src="website.js"></script>
+          <div class="work__card">
+            <img class="work__card-image" src="/assets/images/work/client3.jpg" alt="Client 3">
+            <div class="work__card-info">
+              <p class="work__card-name">Kundenname</p>
+              <p class="work__card-result">12 neue Kunden im ersten Monat</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+    -->
+
+    <section class="cta">
+      <div class="container">
+        <h2 class="cta__title">Bereit loszulegen?</h2>
+        <a href="/pages/contact/" class="btn btn--primary">Jetzt kostenlos beraten lassen</a>
+      </div>
+    </section>
+    
+
+    </main>
+
+    <div id="badge"></div>
+
+    <div id="footer"></div>
+
+    <script src="/js/main.js"></script>
+
   </body>
-</html>
