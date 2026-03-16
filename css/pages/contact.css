@@ -92,7 +92,8 @@
 .contact__whatsapp-btn svg {
     width: 32px;
     height: 32px;
-    transition: filter var(--transition-fast);
+    color: #000000;
+    transition: filter 0.2s;
 }
 
 .contact__whatsapp-btn:hover svg {
