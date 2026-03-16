@@ -1,0 +1,19 @@
+/* header layout */
+.header {
+    position: sticky;
+    top: 0;
+    z-index: var(--z-navbar);
+    background: var(--color-bg);
+}
+
+.header__items{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: var(--space-5);
+}
+
+.header__logo {
+    width: 70px;
+}

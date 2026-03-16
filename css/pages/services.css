@@ -1,0 +1,217 @@
+/* services page */
+
+.services-page .services-teaser {
+    padding-bottom: 40vh;
+}
+
+.services-teaser .hero__content {
+    margin-bottom: var(--space-7);
+}
+
+.service:last-of-type {
+    margin-bottom: var(--space-9);
+}
+
+/* service section */
+.service {
+    padding: var(--space-9) 0;
+    color: var(--color-text);
+    scroll-margin-top: var(--space-7);
+}
+
+.service__card {
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-lg);
+    padding: var(--space-7);
+    background: rgba(255, 255, 255, 0.04);
+}
+
+.service__label {
+    font-size: var(--text-sm);
+    opacity: var(--opacity-muted);
+    margin-bottom: var(--space-3);
+}
+
+.service__header {
+    margin-bottom: var(--space-7);
+}
+
+.service__title {
+    font-size: var(--text-2xl);
+    line-height: 1.3;
+    max-width: 800px;
+}
+
+.service__certified {
+    font-size: var(--text-sm);
+    opacity: var(--opacity-muted);
+    margin-bottom: var(--space-7);
+}
+
+.service__offer {
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-lg);
+    padding: var(--space-6);
+    margin-bottom: var(--space-7);
+}
+
+.service__offer-title {
+    font-size: var(--text-lg);
+    margin-bottom: var(--space-3);
+}
+
+.service__offer-text {
+    font-size: var(--text-base);
+    opacity: var(--opacity-muted);
+    margin-bottom: var(--space-4);
+}
+
+.service__offer-list {
+    list-style: disc;
+    padding-left: var(--space-5);
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-2);
+}
+
+.service__offer-list li {
+    font-size: var(--text-sm);
+    opacity: var(--opacity-muted);
+}
+
+.service__content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+        "features pricing"
+        "cta      pricing";
+    gap: var(--space-8);
+}
+
+.service__features {
+    grid-area: features;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-6);
+}
+
+.service__cta {
+    grid-area: cta;
+    align-self: start;
+    justify-self: start;
+}
+
+.service__footer {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-3);
+}
+
+.service__features-title,
+.service__pricing-title {
+    font-size: var(--text-lg);
+}
+
+.service__list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-3);
+}
+
+.service__list-item {
+    font-size: var(--text-base);
+    opacity: var(--opacity-muted);
+    padding-left: var(--space-4);
+    position: relative;
+}
+
+.service__list-item::before {
+    content: '—';
+    position: absolute;
+    left: 0;
+    opacity: var(--opacity-muted);
+}
+
+.service__list-group {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-4);
+}
+
+.service__note {
+    font-size: var(--text-sm);
+    opacity: var(--opacity-muted);
+    max-width: 350px;
+}
+
+.service__pricing {
+    grid-area: pricing;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-4);
+}
+
+.service__price-card {
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    padding: var(--space-5);
+}
+
+.service__price-label {
+    font-size: var(--text-sm);
+    opacity: var(--opacity-muted);
+    margin-bottom: var(--space-2);
+}
+
+.service__price-amount {
+    font-size: var(--text-3xl);
+    font-weight: var(--font-bold);
+}
+
+.service__price-period {
+    font-size: var(--text-base);
+    font-weight: var(--font-regular);
+    opacity: var(--opacity-muted);
+}
+
+.service__price-note {
+    font-size: var(--text-sm);
+    opacity: var(--opacity-muted);
+    margin-top: var(--space-2);
+    max-width: 350px;
+}
+
+@media (max-width: 768px) {
+    .services-page .services-teaser {
+        padding-bottom: 20vh;
+    }
+
+    .services-teaser__grid {
+        flex-direction: column;
+    }
+
+    .service {
+        padding: var(--space-7) 0;
+    }
+
+    .service:last-of-type {
+        margin-bottom: var(--space-6);
+    }
+
+    .service__card {
+        padding: var(--space-5);
+    }
+
+    .service__content {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "features"
+            "pricing"
+            "cta";
+    }
+
+    .service__note,
+    .service__price-note {
+        max-width: 100%;
+    }
+}
