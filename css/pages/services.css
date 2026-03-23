@@ -1,5 +1,50 @@
 /* services page */
 
+/* services nav cards */
+.services-teaser {
+    padding: var(--space-7) 0;
+}
+
+.services-teaser__grid {
+    display: flex;
+    flex-direction: row;
+    gap: var(--space-6);
+}
+
+.services-teaser__card {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-4);
+    padding: var(--space-6);
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-lg);
+    transition: border-color var(--transition-base);
+    text-decoration: none;
+}
+
+.services-teaser__card:hover {
+    border-color: var(--color-primary);
+}
+
+.services-teaser__label {
+    font-size: var(--text-sm);
+    color: var(--color-muted);
+}
+
+.services-teaser__title {
+    font-size: var(--text-xl);
+    color: var(--color-text);
+    line-height: 1.3;
+}
+
+.services-teaser__link {
+    font-size: var(--text-sm);
+    color: var(--color-primary);
+    margin-top: auto;
+}
+
 .services-page .services-teaser {
     padding-bottom: 40vh;
 }
@@ -23,7 +68,7 @@
     border: 1px solid var(--color-border);
     border-radius: var(--radius-lg);
     padding: var(--space-7);
-    background: rgba(255, 255, 255, 0.04);
+    background: var(--color-surface);
 }
 
 .service__label {

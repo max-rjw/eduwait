@@ -17,7 +17,6 @@
 /* utilities */
 @import "./utilities/flex.css";
 @import "./utilities/spacing.css";
-@import "./utilities/navbar.css";
 
 /* pages */
 @import "./pages/home.css";

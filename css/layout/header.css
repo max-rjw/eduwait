@@ -3,17 +3,24 @@
     position: sticky;
     top: 0;
     z-index: var(--z-navbar);
-    background: var(--color-bg);
+    background: #09090b;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
 
-.header__items{
+.header__items {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    margin-top: var(--space-5);
+    padding: var(--space-4) 0;
 }
 
 .header__logo {
-    width: 70px;
+    width: 120px;
+}
+
+.header__logo-image {
+    width: 120px;
+    height: auto;
+    display: block;
 }

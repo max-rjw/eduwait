@@ -1,7 +1,9 @@
 /* button component */
 .btn {
-    display: inline-block;
-    padding: var(--space-2) var(--space-5);
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-2);
+    padding: var(--space-3) var(--space-6);
     border-radius: var(--radius-full);
     font-family: 'Montserrat', sans-serif;
     font-size: var(--text-sm);
@@ -9,16 +11,28 @@
     text-decoration: none;
     cursor: pointer;
     border: none;
-    transition: background-color var(--transition-fast), color var(--transition-base);
-}
-
-.btn--primary:hover {
-    background-color: var(--color-text);
-    color: var(--color-bg);
+    transition: background-color var(--transition-fast), color var(--transition-fast), border-color var(--transition-fast);
+    white-space: nowrap;
 }
 
 .btn--primary {
+    background-color: var(--color-primary);
+    color: #ffffff;
+    border: 2px solid var(--color-primary);
+}
+
+.btn--primary:hover {
+    background-color: var(--color-primary-hover);
+    border-color: var(--color-primary-hover);
+}
+
+.btn--ghost {
     background-color: transparent;
-    color: var(--color-text);
-    border: 2px solid var(--color-text);
+    color: #ffffff;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+.btn--ghost:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-color: rgba(255, 255, 255, 0.6);
 }

@@ -17,15 +17,14 @@
 
 .navbar__menu a {
     font-size: var(--text-base);
-    color: var(--color-text);
+    color: rgba(255, 255, 255, 0.75);
     text-decoration: none;
+    font-weight: var(--font-medium);
+    transition: color var(--transition-fast);
 }
 
-.navbar__menu-instagram svg {
-    width: 24px;
-    height: 24px;
-    display: block;
-    color: var(--color-bg);
+.navbar__menu a:hover {
+    color: #ffffff;
 }
 
 @media (max-width: 768px) {
@@ -37,8 +36,8 @@
     }
 
     .navbar__toggle-image {
-        width: 40px;
-        height: 40px;
+        width: 28px;
+        height: 28px;
         filter: invert(1);
     }
 
@@ -50,7 +49,7 @@
         gap: var(--space-6);
         position: fixed;
         inset: 0;
-        background: var(--color-bg);
+        background: #09090b;
         padding: var(--space-9) var(--container-padding);
         z-index: var(--z-modal);
     }
@@ -61,11 +60,6 @@
 
     .navbar__menu a {
         font-size: var(--text-xl);
-    }
-
-    .navbar__menu-instagram svg {
-        width: 32px;
-        height: 32px;
     }
 
     .navbar__toggle {
