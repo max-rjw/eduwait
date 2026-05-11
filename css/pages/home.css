@@ -291,22 +291,40 @@
     }
 
     .hero {
-        padding: var(--space-8) 0 var(--space-7);
+        padding: var(--space-7) 0 var(--space-7);
+    }
+
+    .kicker {
+        margin-bottom: var(--space-2);
     }
 
     .hero__title {
-        font-size: var(--text-3xl);
-        letter-spacing: -0.01em;
+        font-size: var(--text-4xl);
+        letter-spacing: -0.02em;
     }
 
     .hero__subtitle {
         font-size: var(--text-base);
+        color: #c4c4cc;
     }
 
     .hero__ctas {
         flex-direction: column;
         align-items: flex-start;
+        width: 100%;
     }
+
+    .hero__ctas .btn {
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .hero__ctas .btn--ghost {
+        border-color: rgba(255, 255, 255, 0.25);
+        color: rgba(255, 255, 255, 0.85);
+    }
+
 
     .stats__grid {
         flex-direction: column;
