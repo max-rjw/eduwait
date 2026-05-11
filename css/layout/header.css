@@ -12,15 +12,16 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    padding: var(--space-4) 0;
+    padding-top: var(--space-4);
+    padding-bottom: var(--space-4);
 }
 
 .header__logo {
-    width: 120px;
+    width: 80px;
 }
 
 .header__logo-image {
-    width: 120px;
+    width: 80px;
     height: auto;
     display: block;
 }

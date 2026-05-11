@@ -11,12 +11,29 @@
 
   <body>
 
-    <header id="header"></header>
+    <header class="header">
+      <div class="header__items container">
+        <div class="header__logo">
+          <a href="/">
+            <img class="header__logo-image" src="/assets/images/images/logo/EduWait-logo-black.png" alt="EduWait" width="80">
+          </a>
+        </div>
+        <nav class="navbar">
+          <div class="navbar__toggle">
+            <img class="navbar__toggle-image" src="/assets/svg's/bars.svg" alt="menu_toggle">
+          </div>
+          <div class="navbar__menu">
+            <a href="/pages/our_services/">Services</a>
+            <a href="/pages/contact/" class="btn btn--primary">Contact</a>
+          </div>
+        </nav>
+      </div>
+    </header>
 
     <main>
       <section class="hero">
         <div class="hero__content container">
-          <div class="kicker"></div>
+          <div class="kicker"><span class="kicker__badge">EduWait</span></div>
           <h1 class="hero__title">Seite nicht gefunden.</h1>
           <a href="/" class="btn btn--primary hero__cta">Zurück zur Startseite</a>
         </div>
@@ -24,7 +41,28 @@
     </main>
 
     <div id="badge"></div>
-    <div id="footer"></div>
+
+    <footer class="footer" id="footer">
+      <div class="footer__main container">
+        <div class="footer__logo">
+          <a href="/">
+            <img class="footer__logo-image" src="/assets/images/images/logo/EduWait-logo-black.png" alt="EduWait" width="60">
+          </a>
+        </div>
+        <nav class="footer__nav">
+          <a href="/pages/our_services/" class="footer__nav-link">Services</a>
+          <a href="/pages/contact/" class="footer__nav-link">Contact</a>
+        </nav>
+        <div class="footer__legal">
+          <a href="/pages/impressum/" class="footer__legal-link">Impressum</a>
+          <a href="/pages/datenschutz/" class="footer__legal-link">Datenschutz</a>
+        </div>
+      </div>
+      <div class="footer__bottom container">
+        <p class="footer__copyright">© 2026 EduWait. All rights reserved.</p>
+        <p class="footer__madeby">Made by <a href="https://instantadvantages.com" class="footer__madeby-link" target="_blank" rel="noopener">Instant Advantages <img src="/assets/images/images/instant-advantages-logo-black.png" alt="Instant Advantages" class="footer__madeby-logo"></a></p>
+      </div>
+    </footer>
 
     <script src="/js/main.js"></script>
 

@@ -44,7 +44,7 @@
    ======================== */
 
 .hero {
-    padding: var(--space-9) 0 var(--space-8);
+    padding: var(--space-8) 0 var(--space-8);
     background: #09090b;
 }
 
