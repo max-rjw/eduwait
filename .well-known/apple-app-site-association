@@ -1,0 +1,11 @@
+{
+  "applinks": {
+    "apps": [],
+    "details": [
+      {
+        "appID": "54UXWLFK4S.com.eduwait.app",
+        "paths": [ "/gate", "/gate/*" ]
+      }
+    ]
+  }
+}
